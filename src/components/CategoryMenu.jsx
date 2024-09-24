@@ -32,7 +32,7 @@ const selectedCategory= useSelector((state)=>state.category.category);
         <div className='my-5 flex gap-3 overflow-x-scroll scroll-smooth lg:overflow-x-hidden'>
         <button 
 onClick={()=>dispatch(setCategory("All"))}
-className={`px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-green-500text-white ${selectedCategory === "All" && "bg-green-500 text-white"}`}>All</button>
+className={`px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-green-500text-white text-black  shadow-md transition duration-300 ease-in-out transform hover:bg-blue-600 hover:scale-105 hover:shadow-lg ${selectedCategory === "All" && "bg-green-500 text-black"}`}>All</button>
             {
               categories.map((category,index)=>{
 return    (
@@ -40,7 +40,7 @@ return    (
   onClick={() => dispatch(setCategory(category))}
 
 key={index}
-className={`px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-green-500 hover:text-white ${selectedCategory===category && "bg-green-500 text-white"}`}>{category}</button>
+className={`px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-green-500 hover:text-white  text-black  shadow-md transition duration-300 ease-in-out transform  hover:scale-105 hover:shadow-lg${selectedCategory===category && "bg-green-500 text-yellow-600"}`}>{category}</button>
 );
               })
             }
