@@ -49,7 +49,7 @@ To run this project locally, follow these steps:
 
 bash
 Copy code
-git clone https://github.com/your-username/your-ecommerce-repo.git
+git clone https://productcard-seven.vercel.app/
 Navigate to the project directory:
 
 bash
